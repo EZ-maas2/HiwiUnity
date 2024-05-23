@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flicker : MonoBehaviour
+public class Flicker : MonoBehaviour
 {
     public GameObject thisSphere;
     public Material originalMaterial;
     public Material transparentMaterial;
-    public int frequency;
+    public float frequency;
     private float timePassed;
     private bool transparent;
 
@@ -19,9 +19,6 @@ public class flicker : MonoBehaviour
     
     }
 
-    void SwitchMaterial(Material material){
-        thisSphere.GetComponent<Renderer>().material= material;
-    }
 
     void SwitchMesh(bool isEnabled){
         thisSphere.GetComponent<MeshRenderer>().enabled = isEnabled;
@@ -35,13 +32,13 @@ public class flicker : MonoBehaviour
             timePassed = 0.0f;
             if (transparent)
                 {
-                    //SwitchMaterial(originalMaterial);
+ 
                     SwitchMesh(true);
                     transparent = false;
                 }
             else
             {
-                //SwitchMaterial(transparentMaterial);
+
                 SwitchMesh(false);
                 transparent = true;
             }

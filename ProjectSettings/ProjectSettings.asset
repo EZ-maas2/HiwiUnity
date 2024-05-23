@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: default
+  companyName: Eliza
   productName: Hiwi project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -142,8 +142,6 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 11400000, guid: 9a2d3a5bef3660d49965c336a26ff6d5, type: 2}
-  - {fileID: -1762039510426962020, guid: 074834a6c5d366045b7cea87c2bced4c, type: 2}
-  - {fileID: 11400000, guid: bd0858578cb6e7544b41855e28642f14, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
