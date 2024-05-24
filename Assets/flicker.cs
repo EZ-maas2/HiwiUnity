@@ -27,22 +27,23 @@ public class Flicker : MonoBehaviour
     void FixedUpdate()
     {
         timePassed += Time.fixedDeltaTime;
-        if (timePassed >= 1/frequency) //Assumption: in seconds
-        {
-            timePassed = 0.0f;
-            if (transparent)
-                {
- 
-                    SwitchMesh(true);
-                    transparent = false;
-                }
-            else
+        if (frequency != 0){
+            if (timePassed >= 1/frequency) //Assumption: in seconds
             {
+                timePassed = 0.0f;
+                if (transparent)
+                    {
+    
+                        SwitchMesh(true);
+                        transparent = false;
+                    }
+                else
+                {
 
-                SwitchMesh(false);
-                transparent = true;
-            }
-        }
+                    SwitchMesh(false);
+                    transparent = true;
+                }
+            }}
     
 
     }
