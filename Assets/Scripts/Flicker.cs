@@ -11,12 +11,11 @@ public class Flicker : MonoBehaviour
     private float timePassed;
     private bool transparent;
 
-    // Flickering the object on and off 
+    // Flickering the object on and off  (attached to teh tracking sphere object)
 
     void Start(){
         timePassed = 0.0f;
         transparent = false;
-    
     }
 
 
@@ -27,23 +26,28 @@ public class Flicker : MonoBehaviour
     void FixedUpdate()
     {
         timePassed += Time.fixedDeltaTime;
-        if (frequency != 0){
+        if (frequency != 0)
+        {
             if (timePassed >= 1/frequency) //Assumption: in seconds
             {
-                timePassed = 0.0f;
+                timePassed = 0.0f; // restart the timer
                 if (transparent)
                     {
-    
                         SwitchMesh(true);
                         transparent = false;
                     }
                 else
                 {
-
                     SwitchMesh(false);
                     transparent = true;
                 }
-            }}
+            }
+        }
+        else
+        
+        {
+            SwitchMesh(true);
+        }
     
 
     }

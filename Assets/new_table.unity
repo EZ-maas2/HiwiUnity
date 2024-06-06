@@ -984,7 +984,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1 ms
+  m_text: Static
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2030,6 +2030,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3073860641263487288, guid: 396efd404cefc5c45adfe699d0993478, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231983361309561463, guid: 396efd404cefc5c45adfe699d0993478, type: 3}
+      propertyPath: frequency
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7231983361309561463, guid: 396efd404cefc5c45adfe699d0993478, type: 3}
@@ -3270,7 +3274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   server_address: tcp://*:5556
-  pr: {fileID: 2119500509}
 --- !u!1001 &1590995916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3550,7 +3553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3daa4a4a322db54459bc8625a9ec7b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newFreq: 1000
+  newFreq: 0
 --- !u!1 &1755014308
 GameObject:
   m_ObjectHideFlags: 0
